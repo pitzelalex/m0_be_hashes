@@ -50,7 +50,7 @@ puts ""
 
 email_contents = {
   sender: "pitzelalex@gmail.com",
-  recipiants: ["john@smith.com", "mike@sad.com"],
+  recipients: ["john@smith.com", "mike@sad.com"],
   subject: "RE: Where is my order?",
   body: "Hi John and Mike,
 
@@ -115,7 +115,8 @@ posts = [
 p posts
 p posts[0]
 
-
+puts ""
+puts ""
 # The code snippet above shows an Array with 2 elements. Each element in the Array is a
 # Hash. Each of those Hashes has 4 key-value pairs. This may LOOK
 # a bit daunting - it's OK! You don't need to be 100% comfortable with this, but it's
@@ -125,3 +126,40 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+inbox = [
+  {
+      sender: "pitzelalex@gmail.com",
+      recipients: ["john@smith.com", "mike@sad.com"],
+      subject: "RE: Where is my order?",
+      body: "Hi John and Mike,
+
+      I'm sorry that you aren't satisfied with your order, we can offer you a refund if you are willing to return the defective ones you received. However should you continue to harass our employees, I will be forced to escalate the matter.
+
+      Regards,",
+      signature: "Alex Pitzel"
+  },
+  {
+      sender: "mike@sad.com",
+      recipients: ["pitzelalex@gmail.com"],
+      subject: "RE: Where is my order?",
+      body: "Hi Alex,
+
+      I can't believe you haven't send my replacement socks yet. I swear I'll review bomb your shop!
+
+      Fix this or else,",
+      signature: "Mike"
+  },
+  {
+      sender: "pitzelalex@gmail.com",
+      recipients: ["john@smith.com", "mike@sad.com"],
+      subject: "RE: Where is my order?",
+      body: "Hi John and Mike,
+
+      Per my last email, I gave your things to legal who will be taking it from here.
+
+      Regards,",
+      signature: "Alex Pitzel"
+  }
+]
+
+pp inbox
