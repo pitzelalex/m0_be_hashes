@@ -29,7 +29,14 @@ birthdays = {
 #
 #
 #
-
+puts ""
+birthdays.each do |name, date|
+  if name.end_with?("s") == true
+    p "#{name}' birthday is #{date}"
+  else
+    p "#{name}'s birthday is #{date}"
+  end
+end
 
 # ======================================
 # 3- Using the following Hash
@@ -45,3 +52,10 @@ login_statuses = {
 #
 #
 #
+puts ""
+login_statuses.each do |name, online|
+  if online == true
+    p name
+  else
+  end
+end
